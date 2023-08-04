@@ -1,0 +1,185 @@
+.section__about {
+    margin-top: 49px;
+
+
+    .about__content {
+
+
+
+        h1 {
+
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 59px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        >p {
+            max-width: 1235px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 20px;
+
+        }
+
+
+        .about__row {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .about__img {
+                min-height: 450px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                flex: 0 1 49%;
+                background-image: url('../../../public/img/job.png');
+                border-radius: 28px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                .about__desc__container {
+                    display: flex;
+                    justify-content: space-between;
+                    background: #00000080;
+                    text-align: center;
+                    align-items: center;
+                    padding: 50px;
+
+                    >p {
+                        max-width: 433px;
+                        color: #fff;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin-right: 30px;
+
+                    }
+
+                    .about__btn {
+
+
+                        a {
+                            display: inline-block;
+                            border: 3px solid #FF9900;
+                            padding: 17px 34px;
+                            color: #fff;
+                            font-family: Montserrat;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                            border-radius: 16px;
+                            text-align: center;
+
+                        }
+
+                    }
+                }
+
+            }
+
+
+            .about__col {
+                flex: 0 1 49%;
+
+
+
+                .about__block {
+                    border: 1px solid #CACACA;
+                    border-radius: 30px;
+                    padding: 64px 59px 60px 59px;
+                    display: flex;
+                    margin-bottom: 32px;
+
+                    .block__img {
+                        margin-right: 50px;
+                    }
+
+
+                    .block__desc {
+
+                        p {
+                            margin-top: 7px;
+                            max-width: 450px;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            line-height: 32px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            ;
+                        }
+
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                }
+
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+}
+
+
+
+@media (max-width :1200px) {
+
+    .about__block {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+
+@media (max-width : 992px) {
+
+  
+
+    .about__row {
+        row-gap: 32px;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width : 500px) {
+    .about__desc__container {
+        padding : 15px !important;
+
+        p {
+            line-height: 10px !important;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.footer {
+    background-color: #000;
+    margin-top: 100px;
+
+    .footer__row {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+
+
+
+        .footer__col-1 {
+
+            flex-basis: 20.9%;
+            display: flex;
+            flex-direction: column;
+
+
+            nav {
+                margin-top: 18px;
+
+                a {
+                    color: #CACACA;
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+            }
+
+
+
+
+            .footer__social {
+                margin-top: auto;
+
+                svg:first-child {
+                    margin-right: 25px;
+                }
+            }
+
+        }
+
+
+        .footer__col-2 {
+
+            flex-basis: 32.2%;
+
+            h2 {
+                color: #CACACA;
+                font-size: 3rem;
+                font-weight: 400;
+                line-height: 59px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 28px;
+
+                input {
+                    font-family: Montserrat;
+                    box-sizing: border-box;
+                    margin-bottom: 25px;
+                    color: #CACACA;
+                    display: block;
+                    width: 100%;
+                    background-color: #414141;
+                    outline: none;
+                    border-radius: 16px;
+                    padding: 14px 24px;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    border: none;
+
+
+                    &:focus::placeholder {
+                        color: white;
+                    }
+
+                    &::placeholder {
+                        color: #CACACA;
+                    }
+
+
+                }
+
+                textarea {
+                    box-sizing: border-box;
+                    margin-bottom: 25px;
+                    font-family: Montserrat;
+                    color: #CACACA;
+                    display: block;
+                    width: 100%;
+                    background-color: #414141;
+                    outline: none;
+                    border-radius: 16px;
+                    padding: 20px 24px 0px 24px;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    border: none;
+                    max-height: 150px;
+
+
+
+                    &:focus::placeholder {
+                        color: white;
+                    }
+
+                    &::placeholder {
+                        color: #CACACA;
+                    }
+                }
+
+
+                button {
+                    margin-top: 7px;
+                    width: 47%;
+                    color: #fff;
+                    background-color: #FF9900;
+                    padding: 19px 10px;
+                    border-radius: 15px;
+                    outline: 0;
+                    border: 0;
+                    font-family: Montserrat;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    align-items: center;
+         
+
+                }
+
+            }
+
+
+
+        }
+
+
+        .footer__col-3 {
+
+            display: flex;
+            flex-direction: column;
+            flex-basis: 20.51%;
+            justify-content: center;
+            
+
+            p {
+                
+                color: #CACACA;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+
+
+
+    }
+
+}
+
+
+
+@media (max-width : 1200px) {
+    .footer__row {
+        flex-direction: column-reverse;
+
+        .footer__col-1 {
+            margin-top: 30px;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+
+            .footer__social {
+                margin-top: 30px !important;
+            }
+
+        }
+
+    }
+}

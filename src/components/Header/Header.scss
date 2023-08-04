@@ -1,0 +1,204 @@
+.header {
+    padding: 15px 0px;
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 5px 40px 0px #0000001A;
+
+
+
+    .container {
+
+
+
+
+        .header__container {
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+
+            .header__logo {
+                flex: 0 0 30%;
+
+                img {
+                    float: left;
+                }
+
+            }
+
+
+            .header__nav {
+                display: flex;
+                column-gap: 85px;
+
+                ul {
+
+
+                    li {
+
+                        cursor: pointer;
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+
+                    }
+                }
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+        .header__btns {
+            display: flex;
+            column-gap: 20px;
+
+            .search__btn {
+                margin-left: 10px;
+                cursor: pointer;
+                display: block;
+                outline: none;
+                border: 0;
+                background: transparent;
+                width: 24px;
+                height: 24px;
+                background-image: url('../../../public/img/search.png');
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+
+
+            .burger__btn {
+                cursor: pointer;
+                display: none;
+            }
+
+
+        }
+
+
+    }
+
+}
+
+
+
+
+@media (max-width : 1200px) {
+    .header {
+
+
+
+
+        .container {
+
+
+
+
+            .header__container {
+
+
+
+                .header__logo {
+
+
+                    img {}
+
+                }
+
+
+                .header__nav {
+                    display: none;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    top: 50%;
+                    z-index: 10;
+                    background-color: #FF9900;
+                    padding : 100px;
+                    transform: translate(-50%,-50%);
+                    left: 50%;
+
+                    ul {
+
+
+                        li {
+
+                            margin-top: 20px;
+
+                        }
+                    }
+
+
+                    
+
+
+                }
+
+               
+
+
+
+
+
+
+                .header__btns {
+
+
+                    .search__btn {
+                     
+
+                    }
+
+
+                    .burger__btn {
+                        display: block;
+                    }
+
+
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+
+
+
+    .active {
+        display: flex !important;
+    }
+
+}
+
+@media (max-width  : 600px) {
+    .promo__content {
+        text-align: center;
+        > h1 {
+            line-height: unset !important;
+        }
+    }
+}
